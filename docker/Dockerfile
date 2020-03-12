@@ -15,6 +15,7 @@ RUN cd /deepPhosAPI && \
    pip3 install sklearn
 
 COPY run.sh .
+RUN chmod a+x run.sh
 EXPOSE 5000
 EXPOSE 8090
 CMD ./run.sh
